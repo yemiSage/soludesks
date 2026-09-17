@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="calendar-tick">
+<path id="Vector" d="M6.66667 1.66667V4.16667" stroke="#636363" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M13.3333 1.66667V4.16667" stroke="#636363" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M2.91667 7.575H17.0833" stroke="#636363" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Group">
+<path id="Vector_4" d="M18.3333 15.8333C18.3333 16.4583 18.1583 17.05 17.85 17.55C17.275 18.5167 16.2167 19.1667 15 19.1667C14.1583 19.1667 13.3917 18.8583 12.8083 18.3333C12.55 18.1167 12.325 17.85 12.15 17.55C11.8417 17.05 11.6667 16.4583 11.6667 15.8333C11.6667 13.9917 13.1583 12.5 15 12.5C16 12.5 16.8917 12.9417 17.5 13.6333C18.0167 14.225 18.3333 14.9917 18.3333 15.8333Z" stroke="#636363" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M13.6995 15.833L14.5245 16.6579L16.2995 15.0163" stroke="#636363" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path id="Vector_6" d="M17.5 7.08333V13.6333C16.8917 12.9417 16 12.5 15 12.5C13.1583 12.5 11.6667 13.9917 11.6667 15.8333C11.6667 16.4583 11.8417 17.05 12.15 17.55C12.325 17.85 12.55 18.1167 12.8083 18.3333H6.66667C3.75 18.3333 2.5 16.6667 2.5 14.1667V7.08333C2.5 4.58333 3.75 2.91667 6.66667 2.91667H13.3333C16.25 2.91667 17.5 4.58333 17.5 7.08333Z" stroke="#636363" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Vector_7" opacity="0">
+</g>
+<path id="Vector_8" d="M9.99542 11.416H10.0029" stroke="#636363" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M6.91274 11.416H6.92023" stroke="#636363" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_10" d="M6.91274 13.916H6.92023" stroke="#636363" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

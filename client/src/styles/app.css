@@ -1,0 +1,212 @@
+@import 'tailwindcss';
+@import './tokens.css';
+
+/* Design-system surface: Figma variables mapped onto Tailwind theme keys so that
+   utilities such as `text-ink` or `bg-primary` resolve to the exported tokens. */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Quicksand', 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: var(--sematic-acents-maintext-1);
+  --color-muted: var(--sematic-acents-maintext-2);
+  --color-primary: var(--standard-primaryalpha-primary-9);
+  --color-primary-strong: var(--standard-primaryalpha-primary-10);
+  --color-primary-text: var(--sematic-acents-primarytext-1);
+  --color-navy: var(--standard-primaryalpha-primary-12);
+  --color-secondary: var(--sematic-acents-secondarytext-1);
+  --color-cocoa: var(--standard-secondaryalpha-secondary-12);
+  --color-surface: var(--global-background);
+  --color-surface-muted: var(--sematic-backgrounds-backround-1);
+  --color-line: var(--sematic-boder-and-seperator-greyborder-1);
+  --color-line-soft: var(--sematic-interactivecomponents-greyic-1);
+  --color-line-strong: var(--sematic-interactivecomponents-greyic-2);
+  --color-chip: #f3f6fc;
+  --color-slate-quiet: #cbd5e1;
+
+  --text-display-xl: 60px;
+  --text-display-xl--line-height: 72px;
+  --text-display-lg: 48px;
+  --text-display-lg--line-height: 60px;
+  --text-display-md: 36px;
+  --text-display-md--line-height: 44px;
+  --text-display-sm: 30px;
+  --text-display-sm--line-height: 38px;
+  --text-display-xs: 24px;
+  --text-display-xs--line-height: 32px;
+}
+
+:root {
+  /* Rendered height of the fixed Navbar (utility row + main row) — hero sections
+     pad their content by this much so it clears the floating nav overlay.
+     Keep in sync with Navbar.tsx's row heights. */
+  --nav-h: 76px;
+
+  /* Shared "premium" motion curve — a gentle expo-out used for reveals, card
+     lifts and page transitions so the whole app moves with one consistent feel. */
+  --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Horizontal page gutter from the 1440 artboard (52px), scaling down to 16px on
+     phones. Every persona — learner, trainer, sponsor — shares this one value. */
+  --page-gutter: clamp(16px, 3.6vw, 52px);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --nav-h: 138px;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #f7f7f7 transparent;
+  }
+
+  body {
+    min-width: 0;
+    background: #ffffff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #f7f7f7;
+    border-radius: 9999px;
+  }
+
+  @media (max-width: 639px) {
+    html {
+      width: 100%;
+      max-width: none;
+      overflow-x: clip;
+      scrollbar-width: none;
+    }
+
+    html::-webkit-scrollbar {
+      display: none;
+    }
+
+    body,
+    #root {
+      width: 100%;
+      max-width: none;
+      min-width: 0;
+      overflow-x: clip;
+    }
+  }
+}
+
+@layer components {
+  /* Centred content column: the shared gutter plus the 1440 max-width. */
+  .shell {
+    width: 100%;
+    max-width: none;
+    margin-inline: auto;
+    padding-left: max(var(--page-gutter), env(safe-area-inset-left));
+    padding-right: max(var(--page-gutter), env(safe-area-inset-right));
+  }
+
+  @media (min-width: 1024px) {
+    .shell {
+      max-width: 1440px;
+    }
+  }
+
+  .heading-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.6;
+  }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* The shell's gutter on its own — for portal content that sits beside a sidebar
+   and must not be re-centred at the 1440 max-width. */
+@utility gutter {
+  padding-left: max(var(--page-gutter), env(safe-area-inset-left));
+  padding-right: max(var(--page-gutter), env(safe-area-inset-right));
+}
+
+/* Vertical rhythm every page shares: 20px above the content on phones, 32px from sm up. */
+@utility page-y {
+  padding-top: 20px;
+  padding-bottom: 32px;
+  @media (min-width: 640px) {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Premium card hover: a quiet lift + border tint, never a drop shadow. */
+@utility lift-hover {
+  transition:
+    transform 450ms var(--ease-premium),
+    border-color 450ms var(--ease-premium);
+  will-change: transform;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+    &:hover {
+      transform: none;
+    }
+  }
+}
