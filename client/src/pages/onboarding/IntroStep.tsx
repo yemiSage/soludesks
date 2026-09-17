@@ -14,7 +14,7 @@ export const IntroStep = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Let's find the right course for you — Soludesk LearnHub";
+    document.title = "Let's find the right course for you — Soludesk";
   }, []);
 
   return (

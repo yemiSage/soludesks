@@ -15,7 +15,7 @@ export const Home = () => {
   const [category, setCategory] = useState<string | null>(null);
 
   useEffect(() => {
-    document.title = 'Soludesk LearnHub — Acquire skills that boost your career prospects';
+    document.title = 'Soludesk — Acquire skills that boost your career prospects';
   }, []);
 
   return (

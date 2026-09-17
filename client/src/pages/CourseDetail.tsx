@@ -24,7 +24,7 @@ export const CourseDetail = () => {
   const [tab, setTab] = useState<Tab>('overview');
 
   useEffect(() => {
-    if (data?.course) document.title = `${data.course.title} — Soludesk LearnHub`;
+    if (data?.course) document.title = `${data.course.title} — Soludesk`;
   }, [data?.course]);
 
   if (!slug) return <Navigate to="/" replace />;
