@@ -18,7 +18,7 @@ export const SkillLevelStep = () => {
       <OnboardingHeader progress={0.75} onBack={() => navigate('/get-started/interests')} />
 
       <div className="flex w-full max-w-[684px] flex-col items-center gap-3 text-center">
-        <h1 className="heading-display text-[30px] leading-[38px] text-ink">How familiar are you with {topic}?</h1>
+        <h1 className="heading-display text-display-sm text-ink">How familiar are you with {topic}?</h1>
         <p className="text-base leading-6 text-muted">This helps us understand where you should start.</p>
       </div>
 

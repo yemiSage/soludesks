@@ -81,7 +81,7 @@ const readStored = (): StoredState => {
 };
 
 export type AuthModalStep = 'closed' | 'email' | 'otp';
-export type AuthIntent = 'signin' | 'checkout' | 'scholarship' | 'trainer' | 'sponsor';
+export type AuthIntent = 'signin' | 'checkout' | 'scholarship' | 'trainer' | 'sponsor' | 'learning-path';
 export type OnboardingStep = 'confirm' | 'basic' | 'other' | 'face';
 export type Onboarding = { role: UpgradeRole; step: OnboardingStep } | null;
 

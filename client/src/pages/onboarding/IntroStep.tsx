@@ -32,20 +32,16 @@ export const IntroStep = () => {
         </button>
 
         <div className="flex flex-col gap-8">
-          <div className="relative h-[260px] w-full overflow-hidden rounded-2xl bg-[#0796ee] sm:h-[302px]">
-            <img
-              src="/assets/assessment/find-course-hero.png"
-              alt=""
-              className="absolute inset-0 size-full object-cover"
-            />
-            <img
-              src="/assets/assessment/find-course-illustration.jpg"
-              alt="A learner comparing course paths to choose the right learning destination"
-              className="absolute inset-0 z-10 size-full object-contain p-4 sm:p-5"
-            />
-          </div>
+          {/* Single composed banner (684x302); the aspect-ratio box keeps the whole scene in view on phones instead of cropping its edges. */}
+          <img
+            src="/assets/assessment/find-course-banner.webp"
+            width={684}
+            height={302}
+            alt="A learner reading a map of course steps that leads to graduation"
+            className="aspect-[684/302] w-full rounded-2xl bg-[#1d6bf5] object-cover"
+          />
           <div className="flex flex-col items-center gap-3 text-center">
-            <h1 className="heading-display text-[30px] leading-[38px] text-ink">Let's find the right course for you</h1>
+            <h1 className="heading-display text-display-sm text-ink">Let's find the right course for you</h1>
             <p className="text-base leading-6 text-muted">
               Answer a few questions about what you want to achieve, the skills you're interested in, and what you
               already know. We'll use your answers to recommend courses and a learning path that fits you.

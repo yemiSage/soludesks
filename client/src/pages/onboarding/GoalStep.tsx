@@ -14,7 +14,7 @@ export const GoalStep = () => {
       <OnboardingHeader progress={0.25} onBack={() => navigate('/get-started')} />
 
       <div className="flex w-full max-w-[684px] flex-col items-center gap-3 text-center">
-        <h1 className="heading-display text-[30px] leading-[38px] text-ink">What would you like to achieve?</h1>
+        <h1 className="heading-display text-display-sm text-ink">What would you like to achieve?</h1>
         <p className="text-base leading-6 text-muted">Choose what best describes your learning goal.</p>
       </div>
 

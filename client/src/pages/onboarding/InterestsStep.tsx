@@ -18,7 +18,7 @@ export const InterestsStep = () => {
       <OnboardingHeader progress={0.5} onBack={() => navigate('/get-started/goal')} />
 
       <div className="flex w-full max-w-[684px] flex-col items-center gap-3 text-center">
-        <h1 className="heading-display text-[30px] leading-[38px] text-ink">What are you interested in?</h1>
+        <h1 className="heading-display text-display-sm text-ink">What are you interested in?</h1>
         <p className="text-base leading-6 text-muted">Choose the path you'd like to focus on for this assessment.</p>
       </div>
 

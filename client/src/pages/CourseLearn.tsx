@@ -5,8 +5,8 @@ import { CourseLearnSidebar } from '../components/course/CourseLearnSidebar';
 import { CourseOverview } from '../components/course/CourseOverview';
 import { CourseSpace } from '../components/course/CourseSpace';
 import { ArrowLeftIcon, PlayIcon } from '../components/course/icons';
-import { courseModules } from '../lib/courseModules';
 import { api } from '../lib/api';
+import { allLessons, useCourseProgress } from '../lib/courseProgress';
 import { cx } from '../lib/format';
 import { useToast } from '../lib/toast';
 
@@ -16,8 +16,6 @@ const tabs: Array<{ id: Tab; label: string }> = [
   { id: 'content', label: 'Course Content' },
   { id: 'space', label: 'Course Space' },
 ];
-
-const allLessons = courseModules.flatMap((module) => module.lessons);
 
 export const CourseLearn = () => {
   const { slug } = useParams();
@@ -30,8 +28,10 @@ export const CourseLearn = () => {
   });
 
   const [tab, setTab] = useState<Tab>('overview');
-  const [activeLesson, setActiveLesson] = useState<string>(allLessons[0] ?? '');
-  const [completed, setCompleted] = useState<Set<string>>(new Set());
+  // Lesson completion persists per course, so the dashboard's learning path can track it —
+  // and reopening the player resumes at the first lesson still to do.
+  const { completed, markLessonComplete } = useCourseProgress(slug ?? '');
+  const [activeLesson, setActiveLesson] = useState<string>(() => allLessons.find((lesson) => !completed.has(lesson)) ?? allLessons[0] ?? '');
 
   const lessonIndex = allLessons.indexOf(activeLesson);
   const lessonBody = useMemo(
@@ -51,8 +51,9 @@ export const CourseLearn = () => {
   const { course } = data;
 
   const markComplete = () => {
-    setCompleted((current) => new Set(current).add(activeLesson));
-    showToast('Lesson marked as complete.');
+    const finishesCourse = !completed.has(activeLesson) && completed.size + 1 >= allLessons.length;
+    markLessonComplete(activeLesson);
+    showToast(finishesCourse ? 'Course completed! Your learning path has been updated.' : 'Lesson marked as complete.');
     const next = allLessons[lessonIndex + 1];
     if (next) setActiveLesson(next);
   };

@@ -14,6 +14,7 @@ const subtitleByIntent: Record<AuthIntent, string> = {
   scholarship: 'Sign in or create an account to apply for this scholarship',
   trainer: 'Enter your details address below to begin',
   sponsor: 'Enter your details address below to begin',
+  'learning-path': 'Sign in to save your learning path and continue with this course',
 };
 
 const titleByIntent: Partial<Record<AuthIntent, string>> = {
@@ -47,7 +48,7 @@ const EmailStep = () => {
   };
 
   return (
-    <div className="flex w-full flex-col gap-8">
+    <div className="flex w-full flex-col gap-5 sm:gap-8">
       <button
         type="button"
         onClick={closeAuthModal}
@@ -56,10 +57,10 @@ const EmailStep = () => {
         Cancel
       </button>
 
-      <div className="flex w-full flex-col gap-10">
-        <div className="flex flex-col gap-5">
+      <div className="flex w-full flex-col gap-6 sm:gap-10">
+        <div className="flex flex-col gap-4 sm:gap-5">
           <div className="flex flex-col gap-[13px]">
-            <h2 className="heading-display text-2xl leading-8 text-ink">{titleByIntent[intent] ?? 'Sign Up or Login Into your Account'}</h2>
+            <h2 className="heading-display text-xl leading-7 text-ink sm:text-2xl sm:leading-8">{titleByIntent[intent] ?? 'Sign Up or Login Into your Account'}</h2>
             <p className="text-base leading-6 text-muted">{subtitleByIntent[intent]}</p>
           </div>
 
@@ -170,7 +171,7 @@ const OtpStep = () => {
   };
 
   return (
-    <div className="flex w-full flex-col gap-8">
+    <div className="flex w-full flex-col gap-5 sm:gap-8">
       <button
         type="button"
         onClick={closeAuthModal}
@@ -179,9 +180,9 @@ const OtpStep = () => {
         Cancel
       </button>
 
-      <div className="flex w-full flex-col gap-[25px]">
+      <div className="flex w-full flex-col gap-5 sm:gap-[25px]">
         <div className="flex flex-col gap-[13px]">
-          <h2 className="heading-display text-[28px] leading-9 text-ink sm:text-[36px] sm:leading-[44px]">Verify your Email</h2>
+          <h2 className="heading-display text-2xl leading-8 text-ink sm:text-[36px] sm:leading-[44px]">Verify your Email</h2>
           <p className="text-base leading-6 text-muted">
             An otp has been sent to <span className="font-bold text-ink">{pendingEmail}</span>, kindly input the code below to continue
           </p>
@@ -262,13 +263,14 @@ export const AuthModal = () => {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
-      <div className="relative grid h-[calc(100dvh-24px)] w-[calc(100vw-24px)] max-w-none grid-cols-1 gap-6 overflow-hidden rounded-[20px] bg-white p-4 sm:h-[80vh] sm:w-[80vw] sm:rounded-[40px] sm:p-5 lg:grid-cols-2 lg:gap-10">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 sm:p-4" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+      {/* Phones get an edge-to-edge sheet (full height, square corners, safe-area aware); sm+ keeps the floating card. */}
+      <div className="relative grid h-[100dvh] w-full max-w-none grid-cols-1 gap-6 overflow-hidden bg-white px-4 pt-[max(16px,env(safe-area-inset-top))] pb-[max(16px,env(safe-area-inset-bottom))] sm:h-[80vh] sm:w-[80vw] sm:rounded-[40px] sm:p-5 lg:grid-cols-2 lg:gap-10">
         <button
           type="button"
           onClick={closeAuthModal}
           aria-label="Close"
-          className="absolute top-7 right-7 text-muted hover:text-ink lg:hidden"
+          className="absolute top-7 right-7 hidden text-muted hover:text-ink sm:block lg:hidden"
         >
           <CloseCircle size={24} variant="Linear" color="currentColor" />
         </button>

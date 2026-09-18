@@ -24,7 +24,7 @@ export const AssessmentIntroStep = () => {
           className="h-[302px] w-full max-w-[672px] rounded-2xl object-cover"
         />
         <div className="flex flex-col items-center gap-3 text-center">
-          <h1 className="heading-display text-[30px] leading-[38px] text-ink">Ready for a quick skills check?</h1>
+          <h1 className="heading-display text-display-sm text-ink">Ready for a quick skills check?</h1>
           <p className="text-base leading-6 text-muted">
             A few questions will help us understand what you already know and where you might need more support.
           </p>

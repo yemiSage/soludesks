@@ -1,5 +1,6 @@
 import { Award, Book, Book1, Cup } from 'iconsax-react';
 import { Link } from 'react-router-dom';
+import { LearningPathPanel } from '../components/dashboard/LearningPathPanel';
 import { Faq } from '../components/home/Faq';
 import { useAuth } from '../lib/auth';
 import { avatarColorFor, cx, initialsFrom } from '../lib/format';
@@ -63,6 +64,8 @@ export const Dashboard = () => {
               })}
             </div>
           </div>
+
+          <LearningPathPanel />
 
           <div id="my-courses" className="grid grid-cols-1 gap-6 xl:grid-cols-[1fr_383px]">
             <div className="flex flex-col gap-5 overflow-hidden rounded-xl border-[1.5px] border-line">

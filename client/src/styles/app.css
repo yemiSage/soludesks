@@ -23,16 +23,19 @@
   --color-chip: #f3f6fc;
   --color-slate-quiet: #cbd5e1;
 
-  --text-display-xl: 60px;
-  --text-display-xl--line-height: 72px;
-  --text-display-lg: 48px;
-  --text-display-lg--line-height: 60px;
-  --text-display-md: 36px;
-  --text-display-md--line-height: 44px;
-  --text-display-sm: 30px;
-  --text-display-sm--line-height: 38px;
-  --text-display-xs: 24px;
-  --text-display-xs--line-height: 32px;
+  /* Display type scales with the viewport: the Figma size from 1024px up, stepping down
+     to a phone size at 375px so large headings never dominate a small screen. Body text
+     stays fixed — only display tiers scale. */
+  --text-display-xl: clamp(36px, calc(36px + 24 * (100vw - 375px) / 649), 60px);
+  --text-display-xl--line-height: clamp(44px, calc(44px + 28 * (100vw - 375px) / 649), 72px);
+  --text-display-lg: clamp(32px, calc(32px + 16 * (100vw - 375px) / 649), 48px);
+  --text-display-lg--line-height: clamp(40px, calc(40px + 20 * (100vw - 375px) / 649), 60px);
+  --text-display-md: clamp(28px, calc(28px + 8 * (100vw - 375px) / 649), 36px);
+  --text-display-md--line-height: clamp(36px, calc(36px + 8 * (100vw - 375px) / 649), 44px);
+  --text-display-sm: clamp(24px, calc(24px + 6 * (100vw - 375px) / 649), 30px);
+  --text-display-sm--line-height: clamp(32px, calc(32px + 6 * (100vw - 375px) / 649), 38px);
+  --text-display-xs: clamp(20px, calc(20px + 4 * (100vw - 375px) / 649), 24px);
+  --text-display-xs--line-height: clamp(28px, calc(28px + 4 * (100vw - 375px) / 649), 32px);
 }
 
 :root {
@@ -74,6 +77,18 @@
   :focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
+  }
+
+  /* Removes the 300ms double-tap-to-zoom on everything tappable, so a quick second tap
+     on a card or button never zooms the page on phones. */
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  label,
+  summary {
+    touch-action: manipulation;
   }
 
   ::-webkit-scrollbar {
@@ -132,6 +147,17 @@
     font-family: var(--font-display);
     font-weight: 700;
     letter-spacing: -0.02em;
+  }
+}
+
+/* Unlayered on purpose so it outranks utility classes: iOS Safari zooms the whole page
+   whenever a focused field is set below 16px, which is what the 14px `text-sm` inputs
+   (and the auto-focused sign-in email field) were triggering. */
+@media (max-width: 639px) {
+  input:not([type='checkbox']):not([type='radio']):not([type='range']),
+  select,
+  textarea {
+    font-size: 16px;
   }
 }
 

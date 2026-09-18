@@ -11,7 +11,7 @@ export const ResultsStep = () => {
   return (
     <div className="flex w-full flex-col items-center gap-10">
       <div className="flex w-full max-w-[684px] flex-col items-center gap-3 text-center">
-        <h1 className="heading-display text-[30px] leading-[38px] text-ink">Your learning profile is ready</h1>
+        <h1 className="heading-display text-display-sm text-ink">Your learning profile is ready</h1>
         <p className="text-base leading-6 text-muted">
           Based on your response diagnostics, we've mapped out your baseline expertise profile.
         </p>
@@ -19,7 +19,7 @@ export const ResultsStep = () => {
 
       <div className="flex w-full max-w-[510px] flex-col items-center gap-2 rounded-xl bg-[#f7f7f7] p-5 text-center">
         <p className="text-sm leading-5 font-semibold text-muted">Your current level</p>
-        <p className="heading-display text-[30px] leading-[38px] text-primary">{level}</p>
+        <p className="heading-display text-display-sm text-primary">{level}</p>
         <p className="text-sm leading-5 text-muted">{blurb}</p>
       </div>
 
