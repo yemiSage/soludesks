@@ -15,7 +15,7 @@ export const ScholarshipCard = ({ scholarship }: { scholarship: Scholarship }) =
           <img
             src={scholarship.image}
             alt=""
-            className="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="absolute inset-0 size-full object-cover"
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>

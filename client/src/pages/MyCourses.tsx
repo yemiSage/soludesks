@@ -88,7 +88,7 @@ export const MyCourses = () => {
             {(recommended.data?.items ?? []).map((course) => (
               <Link key={course.id} to={`/courses/${course.slug}`} className="group flex flex-col overflow-hidden rounded-xl border border-line bg-surface">
                 <div className="relative h-32 w-full overflow-hidden">
-                  <img src={course.image} alt="" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <img src={course.image} alt="" className="h-full w-full object-cover" />
                   <div className="absolute inset-0 bg-black/20" />
                 </div>
                 <div className="flex flex-1 flex-col justify-between gap-0">

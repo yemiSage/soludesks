@@ -217,22 +217,15 @@
   }
 }
 
-/* Premium card hover: a quiet lift + border tint, never a drop shadow. */
+/* Card hover: a border tint only — cards never move, scale or cast a shadow on hover. */
 @utility lift-hover {
-  transition:
-    transform 450ms var(--ease-premium),
-    border-color 450ms var(--ease-premium);
-  will-change: transform;
+  transition: border-color 450ms var(--ease-premium);
 
   &:hover {
-    transform: translateY(-4px);
     border-color: var(--color-primary);
   }
 
   @media (prefers-reduced-motion: reduce) {
     transition: none;
-    &:hover {
-      transform: none;
-    }
   }
 }

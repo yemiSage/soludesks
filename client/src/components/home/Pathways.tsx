@@ -14,7 +14,7 @@ export const Pathways = () => {
           <a
             key={pathway.id}
             href="#catalogue"
-            className="flex h-auto min-h-[190px] min-w-0 flex-col items-start gap-4 rounded-xl border-[1.5px] border-primary-text bg-chip p-3 transition-transform duration-200 hover:-translate-y-1 sm:h-[183px] sm:min-h-0 sm:items-center sm:p-5"
+            className="flex h-auto min-h-[190px] min-w-0 flex-col items-start gap-4 rounded-xl border-[1.5px] border-primary-text bg-chip p-3 sm:h-[183px] sm:min-h-0 sm:items-center sm:p-5"
           >
             <span className="flex h-[59px] w-[59px] shrink-0 items-center justify-center rounded-[14.75px] bg-primary-text/10">
               <img src={pathway.icon} alt="" className="h-[42px] w-[42px] object-contain" />

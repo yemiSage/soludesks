@@ -23,7 +23,7 @@ export const CourseCard = ({ course, size = 'compact' }: Props) => {
           src={course.image}
           alt=""
           loading="lazy"
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-black/20" />
         <button

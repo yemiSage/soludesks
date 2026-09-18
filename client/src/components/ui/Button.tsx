@@ -26,7 +26,7 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 export const Button = ({ variant = 'primary', size = 'md', icon, className, children, ...props }: Props) => (
   <button
     className={cx(
-      'inline-flex items-center justify-center gap-2.5 rounded-lg leading-6 transition-[color,background-color,border-color,transform] duration-300 ease-[var(--ease-premium)] hover:scale-[1.015] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:scale-100 motion-reduce:transition-colors motion-reduce:hover:scale-100 motion-reduce:active:scale-100',
+      'inline-flex items-center justify-center gap-2.5 rounded-lg leading-6 transition-[color,background-color,border-color] duration-300 ease-[var(--ease-premium)] disabled:cursor-not-allowed disabled:opacity-60',
       variants[variant],
       sizes[size],
       className,
