@@ -18,7 +18,7 @@ export const Pagination = ({ page, pageCount, onChange }: Props) => {
         type="button"
         disabled={page === 1}
         onClick={() => onChange(page - 1)}
-        className="shrink-0 rounded-md px-2 py-3 text-base font-medium text-[#8c8c8c] disabled:opacity-40 sm:px-3.5"
+        className="flex h-11 shrink-0 items-center rounded-md px-2 text-base font-medium text-[#8c8c8c] disabled:opacity-40 sm:px-3.5"
       >
         Prev
       </button>
@@ -48,7 +48,7 @@ export const Pagination = ({ page, pageCount, onChange }: Props) => {
         type="button"
         disabled={page === pageCount}
         onClick={() => onChange(page + 1)}
-        className="shrink-0 rounded-md px-2 py-3 text-base font-semibold text-primary-text disabled:opacity-40 sm:px-3.5"
+        className="flex h-11 shrink-0 items-center rounded-md px-2 text-base font-semibold text-primary-text disabled:opacity-40 sm:px-3.5"
       >
         Next
       </button>

@@ -25,7 +25,7 @@ export const MyApplications = () => {
             <h3 className="text-2xl leading-8 font-semibold text-ink">No applications yet</h3>
             <p className="text-base text-muted">Unlock your potential with the right course</p>
           </div>
-          <a href="#open-scholarships" className="flex h-12 w-full items-center justify-center rounded-lg bg-primary px-6 text-base font-medium text-white">
+          <a href="#open-scholarships" className="flex h-11 w-full items-center justify-center rounded-lg bg-primary px-6 text-base font-medium text-white">
             Explore Scholarships
           </a>
         </div>

@@ -29,13 +29,13 @@ export const PricingPanel = ({ course }: { course: Course }) => {
       <button
         type="button"
         onClick={onToggleCart}
-        className="flex h-[38px] w-full items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-colors hover:bg-primary-strong sm:h-[43px]"
+        className="flex h-11 w-full items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-colors hover:bg-primary-strong"
       >
         {inCart ? 'In cart' : 'Add to cart'}
       </button>
       <a
         href="#lessons-panel"
-        className="flex h-[38px] w-full items-center justify-center rounded-lg border border-primary text-base text-primary-text sm:h-[43px]"
+        className="flex h-11 w-full items-center justify-center rounded-lg border border-primary text-base text-primary-text"
       >
         Get Started
       </a>

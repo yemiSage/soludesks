@@ -34,7 +34,7 @@ export const BecomeRoleConfirm = () => {
           <button
             type="button"
             onClick={advanceOnboarding}
-            className="flex h-[38px] w-full items-center justify-center rounded-lg bg-primary text-base font-medium text-white sm:h-[43px]"
+            className="flex h-11 w-full items-center justify-center rounded-lg bg-primary text-base font-medium text-white"
           >
             Continue
           </button>

@@ -72,7 +72,7 @@ export const FinalCta = ({
                   onChange={(event) => setEmail(event.target.value)}
                   placeholder="you@example.com"
                   aria-label="Email address"
-                  className="h-13 flex-1 rounded-lg border border-white/20 bg-white/10 px-5 text-base text-white outline-none placeholder:text-white/50 focus:border-white/60"
+                  className="h-11 flex-1 rounded-lg border border-white/20 bg-white/10 px-5 text-base text-white outline-none placeholder:text-white/50 focus:border-white/60"
                 />
                 <Button type="submit" size="lg" disabled={subscribe.isPending} className="sm:w-[180px]">
                   {subscribe.isPending ? 'Signing up…' : 'Create account'}

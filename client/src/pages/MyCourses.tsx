@@ -70,7 +70,7 @@ export const MyCourses = () => {
               <p className="text-base text-muted">You haven&apos;t enrolled in any course yet.</p>
               <Link
                 to="/explore"
-                className="flex h-[38px] items-center justify-center rounded-lg bg-primary px-6 text-base font-medium text-white sm:h-[43px]"
+                className="flex h-11 items-center justify-center rounded-lg bg-primary px-6 text-base font-medium text-white"
               >
                 Explore courses
               </Link>

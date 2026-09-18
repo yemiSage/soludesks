@@ -27,7 +27,7 @@ export const MyWallet = () => {
                 <Wallet2 size={24} variant="Linear" color="#fdfdfd" />
               </span>
             </div>
-            <button type="button" className="flex items-center justify-center gap-3.5 rounded-lg bg-white py-3 text-sm font-medium text-primary-text">
+            <button type="button" className="flex h-11 items-center justify-center gap-3.5 rounded-lg bg-white text-sm font-medium text-primary-text">
               <WalletAdd1 size={16} variant="Linear" color="currentColor" />
               Fund Wallet
             </button>
@@ -40,11 +40,11 @@ export const MyWallet = () => {
                 <p className="text-sm text-muted">Recent wallet activity</p>
               </div>
               <div className="flex items-center gap-3">
-                <button type="button" className="flex items-center gap-1.5 rounded-md border border-line-strong px-3 py-2 text-sm text-ink">
+                <button type="button" className="flex h-11 items-center gap-1.5 rounded-md border border-line-strong px-3 text-sm text-ink">
                   <Filter size={16} variant="Linear" color="currentColor" />
                   Filter
                 </button>
-                <button type="button" className="flex items-center gap-1.5 rounded-md border border-line-strong px-3 py-2 text-sm text-ink">
+                <button type="button" className="flex h-11 items-center gap-1.5 rounded-md border border-line-strong px-3 text-sm text-ink">
                   <Export size={16} variant="Linear" color="currentColor" />
                   Export
                 </button>

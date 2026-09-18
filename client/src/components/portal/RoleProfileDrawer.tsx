@@ -134,14 +134,14 @@ export const RoleProfileDrawer = () => {
       title="Complete Your Profile"
       footer={
         <>
-          <button type="button" onClick={close} className="flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text sm:h-[43px]">
+          <button type="button" onClick={close} className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text">
             Cancel
           </button>
           <button
             type="button"
             onClick={isLastStep ? finish : advanceOnboarding}
             disabled={isLastStep && isTrainer && !captured}
-            className="flex h-[38px] w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-opacity disabled:opacity-50 sm:h-[43px]"
+            className="flex h-11 w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-opacity disabled:opacity-50"
           >
             {isLastStep ? 'Complete' : 'Continue'}
           </button>
@@ -227,7 +227,7 @@ export const RoleProfileDrawer = () => {
               <div className="flex flex-col items-center gap-2 rounded-xl border border-dashed border-line-strong px-4 py-6 text-center">
                 <p className="text-base font-semibold text-ink">Certification</p>
                 <p className="text-sm text-muted">Please upload any relevant certifications or supporting document.</p>
-                <button type="button" className="mt-1 flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-sm font-medium text-primary-text sm:h-[43px]">
+                <button type="button" className="mt-1 flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-sm font-medium text-primary-text">
                   Upload Media
                 </button>
               </div>
@@ -297,7 +297,7 @@ export const RoleProfileDrawer = () => {
                 type="button"
                 onClick={startCapture}
                 disabled={capturing}
-                className="flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-sm font-medium text-primary-text transition-opacity disabled:opacity-50 sm:h-[43px]"
+                className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-sm font-medium text-primary-text transition-opacity disabled:opacity-50"
               >
                 {capturing ? 'Capturing…' : 'Start Capture'}
               </button>

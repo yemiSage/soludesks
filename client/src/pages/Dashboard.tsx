@@ -35,7 +35,7 @@ export const Dashboard = () => {
               </h1>
               <Link
                 to="/streak"
-                className="flex items-center gap-2 rounded-full border-[1.5px] border-[#f59e0b] bg-white px-3 py-2 transition-colors hover:bg-[#fff8ec]"
+                className="flex items-center gap-2 h-11 rounded-full border-[1.5px] border-[#f59e0b] bg-white px-3 transition-colors hover:bg-[#fff8ec]"
               >
                 <span className="flex size-7 items-center justify-center rounded-full bg-[#ffedd5]">
                   <img src="/assets/dashboard/flame.svg" alt="" className="size-4" />
@@ -93,7 +93,7 @@ export const Dashboard = () => {
                             <div className="h-full rounded-full" style={{ width: `${course.progress}%`, background: course.color }} />
                           </div>
                         </div>
-                        <Link to="/my-courses" className="w-full shrink-0 rounded-lg border border-primary-text px-4 py-2 text-center text-base text-primary-text sm:w-auto">
+                        <Link to="/my-courses" className="flex h-11 w-full shrink-0 items-center justify-center rounded-lg border border-primary-text px-4 text-base text-primary-text sm:w-auto">
                           Continue Learning
                         </Link>
                       </div>

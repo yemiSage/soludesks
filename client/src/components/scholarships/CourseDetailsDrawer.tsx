@@ -51,10 +51,10 @@ export const CourseDetailsDrawer = ({ course, onClose, onContinue }: Props) => {
       }
       footer={
         <>
-          <button type="button" onClick={onClose} className="flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text sm:h-[43px]">
+          <button type="button" onClick={onClose} className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text">
             Cancel
           </button>
-          <button type="button" onClick={onContinue} className="flex h-[38px] w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white sm:h-[43px]">
+          <button type="button" onClick={onContinue} className="flex h-11 w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white">
             Continue
           </button>
         </>

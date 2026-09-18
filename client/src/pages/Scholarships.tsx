@@ -27,13 +27,13 @@ export const Scholarships = () => {
             <button
               type="button"
               onClick={() => becomeRole('sponsor')}
-              className="flex h-[38px] flex-1 items-center justify-center rounded-lg bg-primary px-6 text-base font-medium text-white sm:h-[43px]"
+              className="flex h-11 flex-1 items-center justify-center rounded-lg bg-primary px-6 text-base font-medium text-white"
             >
               Become a Sponsor
             </button>
             <a
               href="#open-scholarships"
-              className="flex h-[38px] flex-1 items-center justify-center rounded-lg border border-primary px-6 text-base text-primary-text sm:h-[43px]"
+              className="flex h-11 flex-1 items-center justify-center rounded-lg border border-primary px-6 text-base text-primary-text"
             >
               Explore Scholarships
             </a>
@@ -61,11 +61,11 @@ export const Scholarships = () => {
               <p className="text-base leading-6 text-[#f6f7f6]">Select a course to view scholarship details and apply.</p>
             </div>
             <div className="flex items-center gap-4">
-              <button type="button" className="flex w-[116px] items-center justify-between rounded-full border border-[#d6d6d6] px-5 py-2.5 text-base text-[#f6f7f6]">
+              <button type="button" className="flex h-11 w-[116px] items-center justify-between rounded-full border border-[#d6d6d6] px-5 text-base text-[#f6f7f6]">
                 Filter
                 <Filter size={18} variant="Linear" color="currentColor" />
               </button>
-              <button type="button" className="flex w-[238px] items-center justify-between rounded-full border border-[#d6d6d6] px-5 py-2.5 text-base text-[#f6f7f6]">
+              <button type="button" className="flex h-11 w-[238px] items-center justify-between rounded-full border border-[#d6d6d6] px-5 text-base text-[#f6f7f6]">
                 <span>Date: Recently added</span>
                 <ArrowDown2 size={18} variant="Linear" color="currentColor" />
               </button>
@@ -127,7 +127,7 @@ export const Scholarships = () => {
               <button
                 type="button"
                 onClick={() => becomeRole('sponsor')}
-                className="flex h-[67px] w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white"
+                className="flex h-11 w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white"
               >
                 Become a sponsor
               </button>

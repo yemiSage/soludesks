@@ -40,7 +40,7 @@ export const CourseSpace = () => {
         <button
           type="button"
           onClick={() => setModalOpen(true)}
-          className="flex h-9 items-center gap-2 rounded px-3 py-1.5 text-base font-medium text-white"
+          className="flex h-11 items-center gap-2 rounded px-3 text-base font-medium text-white"
           style={{ backgroundColor: '#0063ef' }}
         >
           <Add size={24} variant="Linear" color="currentColor" />

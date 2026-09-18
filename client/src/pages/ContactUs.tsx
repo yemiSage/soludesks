@@ -141,7 +141,7 @@ export const ContactUs = () => {
               type="button"
               onClick={send}
               disabled={!canSend}
-              className="flex h-12 w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white transition-opacity disabled:opacity-30"
+              className="flex h-11 w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white transition-opacity disabled:opacity-30"
             >
               Send Message
             </button>

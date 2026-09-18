@@ -58,14 +58,14 @@ export const RequestCourseDialog = ({ open, onClose }: { open: boolean; onClose:
               />
             </label>
             <div className="flex gap-3">
-              <button type="button" onClick={close} className="flex h-[38px] flex-1 items-center justify-center rounded-lg border border-primary-text text-sm font-medium text-primary-text sm:h-[43px]">
+              <button type="button" onClick={close} className="flex h-11 flex-1 items-center justify-center rounded-lg border border-primary-text text-sm font-medium text-primary-text">
                 Schedule a meeting
               </button>
               <button
                 type="button"
                 disabled={!title.trim() || !description.trim()}
                 onClick={() => setSent(true)}
-                className="flex h-[38px] flex-1 items-center justify-center rounded-lg bg-primary text-sm font-medium text-white transition-opacity disabled:opacity-40 sm:h-[43px]"
+                className="flex h-11 flex-1 items-center justify-center rounded-lg bg-primary text-sm font-medium text-white transition-opacity disabled:opacity-40"
               >
                 Send Request
               </button>

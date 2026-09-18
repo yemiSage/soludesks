@@ -52,7 +52,7 @@ const EmailStep = () => {
       <button
         type="button"
         onClick={closeAuthModal}
-        className="flex h-[38px] items-center justify-center self-end rounded-xl border border-line-strong px-5 text-base font-medium text-muted transition-colors hover:bg-line-soft sm:h-[43px]"
+        className="flex h-11 items-center justify-center self-end rounded-xl border border-line-strong px-5 text-base font-medium text-muted transition-colors hover:bg-line-soft"
       >
         Cancel
       </button>
@@ -108,7 +108,7 @@ const EmailStep = () => {
           <button
             type="button"
             onClick={() => setShowGoogleNote(true)}
-            className="flex h-[38px] w-full items-center justify-center gap-[15px] rounded-xl bg-ink px-[15px] text-white transition-opacity hover:opacity-90 sm:h-[43px]"
+            className="flex h-11 w-full items-center justify-center gap-[15px] rounded-xl bg-ink px-[15px] text-white transition-opacity hover:opacity-90"
           >
             <img src="/assets/auth/google-logo.svg" alt="" className="size-5" />
             <span className="text-base leading-6 font-medium">Continue with Google</span>
@@ -175,7 +175,7 @@ const OtpStep = () => {
       <button
         type="button"
         onClick={closeAuthModal}
-        className="flex h-[38px] items-center justify-center self-end rounded-xl border border-line-strong px-5 text-base font-medium text-muted transition-colors hover:bg-line-soft sm:h-[43px]"
+        className="flex h-11 items-center justify-center self-end rounded-xl border border-line-strong px-5 text-base font-medium text-muted transition-colors hover:bg-line-soft"
       >
         Cancel
       </button>

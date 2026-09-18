@@ -32,14 +32,14 @@ export const WithdrawDrawer = ({ open, onClose, balance }: { open: boolean; onCl
       footer={
         done ? null : (
           <>
-            <button type="button" onClick={close} className="flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text sm:h-[43px]">
+            <button type="button" onClick={close} className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text">
               Cancel
             </button>
             <button
               type="button"
               onClick={submit}
               disabled={!amount.trim() || Number(amount) <= 0}
-              className="flex h-[38px] w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-opacity disabled:opacity-50 sm:h-[43px]"
+              className="flex h-11 w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-opacity disabled:opacity-50"
             >
               Continue
             </button>
@@ -113,10 +113,10 @@ export const ReceiptDrawer = ({ transaction, onClose }: { transaction: Transacti
     title="Transaction Receipt"
     footer={
       <>
-        <button type="button" onClick={onClose} className="flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text sm:h-[43px]">
+        <button type="button" onClick={onClose} className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text">
           Cancel
         </button>
-        <button type="button" className="flex h-[38px] w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white sm:h-[43px]">
+        <button type="button" className="flex h-11 w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white">
           Download Receipt
         </button>
       </>

@@ -119,7 +119,7 @@ export const NewCourseDrawer = ({ open, onClose }: { open: boolean; onClose: () 
             type="button"
             onClick={submitAi}
             disabled={!name.trim() || !description.trim() || !category}
-            className="flex h-[38px] w-full items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-opacity disabled:opacity-40 sm:h-[43px]"
+            className="flex h-11 w-full items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-opacity disabled:opacity-40"
           >
             Continue
           </button>
@@ -139,7 +139,7 @@ export const NewCourseDrawer = ({ open, onClose }: { open: boolean; onClose: () 
           <DocumentUpload size={32} variant="Bulk" color="currentColor" className="text-muted" />
           <p className="text-base font-semibold text-ink">Import from Document</p>
           <p className="text-sm text-muted">Drag and drop a PDF or Doc file, and we&apos;ll turn it into an interactive course.</p>
-          <button type="button" onClick={startManualBuild} className="mt-1 flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-sm font-medium text-primary-text sm:h-[43px]">
+          <button type="button" onClick={startManualBuild} className="mt-1 flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-sm font-medium text-primary-text">
             Choose File
           </button>
         </div>

@@ -49,7 +49,7 @@ export const TrainerCourses = () => {
           <button
             type="button"
             onClick={() => setCreating(true)}
-            className="flex h-[38px] items-center justify-center gap-2 rounded-lg bg-primary px-5 text-sm font-medium text-white sm:h-[43px]"
+            className="flex h-11 items-center justify-center gap-2 rounded-lg bg-primary px-5 text-sm font-medium text-white"
           >
             <Add size={18} variant="Linear" color="currentColor" />
             New Course

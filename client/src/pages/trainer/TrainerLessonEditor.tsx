@@ -68,7 +68,7 @@ export const TrainerLessonEditor = () => {
           <button
             type="button"
             onClick={() => showToast('Lesson saved.')}
-            className="flex h-[38px] items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-white sm:h-[43px]"
+            className="flex h-11 items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-white"
           >
             Save
           </button>

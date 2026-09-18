@@ -19,9 +19,11 @@ export const AssessmentIntroStep = () => {
 
       <div className="flex w-full max-w-[684px] flex-col items-center gap-10">
         <img
-          src="/assets/assessment/skills-check-hero.png"
-          alt=""
-          className="h-[302px] w-full max-w-[672px] rounded-2xl object-cover"
+          src="/assets/assessment/find-course-banner.webp"
+          width={684}
+          height={302}
+          alt="A learner reading a map of course steps that leads to graduation"
+          className="aspect-[684/302] w-full rounded-2xl bg-[#1d6bf5] object-cover"
         />
         <div className="flex flex-col items-center gap-3 text-center">
           <h1 className="heading-display text-display-sm text-ink">Ready for a quick skills check?</h1>

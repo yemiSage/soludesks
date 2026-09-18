@@ -38,7 +38,7 @@ export const CourseCatalog = ({ search, category, onCategoryChange, onClearSearc
                 onClick={() => onCategoryChange(active ? null : chip.id)}
                 aria-pressed={active}
                 className={cx(
-                  'shrink-0 rounded-[32px] border px-5 py-2.5 text-sm leading-[1.5] font-semibold transition-colors sm:text-base',
+                  'flex h-11 shrink-0 items-center rounded-[32px] border px-5 text-sm leading-[1.5] font-semibold transition-colors sm:text-base',
                   active
                     ? 'border-[var(--sematic-interactivecomponents-primaryic-2)] bg-[var(--sematic-backgrounds-primarybackground-2)] text-primary-text'
                     : 'border-[#d6d6d6] text-[#2c3e50] hover:border-primary hover:text-primary-text',

@@ -91,13 +91,13 @@ export const SponsorProfile = () => {
           </div>
 
           <div className="flex flex-wrap justify-end gap-3">
-            <button type="button" onClick={() => navigate(-1)} className="flex h-[38px] items-center justify-center rounded-lg border border-line-strong px-8 text-sm text-muted sm:h-[43px]">
+            <button type="button" onClick={() => navigate(-1)} className="flex h-11 items-center justify-center rounded-lg border border-line-strong px-8 text-sm text-muted">
               Cancel
             </button>
             <button
               type="button"
               onClick={() => showToast('Profile changes saved.')}
-              className="flex h-[38px] items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-white sm:h-[43px]"
+              className="flex h-11 items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-white"
             >
               Save Changes
             </button>

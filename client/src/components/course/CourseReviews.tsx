@@ -53,7 +53,7 @@ export const CourseReviews = ({ course, reviews }: Props) => {
       <button
         type="button"
         onClick={() => setReviewOpen(true)}
-        className="flex h-[38px] items-center justify-center self-center rounded-lg border border-primary-text px-6 text-base text-primary-text sm:h-[43px]"
+        className="flex h-11 items-center justify-center self-center rounded-lg border border-primary-text px-6 text-base text-primary-text"
       >
         Leave a review
       </button>

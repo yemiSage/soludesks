@@ -33,14 +33,14 @@ export const LeaveConfirmationModal = ({ open, onContinue, onLeave }: Props) => 
           <button
             type="button"
             onClick={onLeave}
-            className="flex h-12 items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text"
+            className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text"
           >
             Yes, leave
           </button>
           <button
             type="button"
             onClick={onContinue}
-            className="flex h-12 w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white"
+            className="flex h-11 w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white"
           >
             Continue
           </button>

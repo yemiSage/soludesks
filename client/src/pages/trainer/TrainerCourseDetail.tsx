@@ -199,7 +199,7 @@ export const TrainerCourseDetail = () => {
             <button
               type="button"
               onClick={() => showToast('Course settings saved.')}
-              className="flex h-[38px] items-center justify-center self-start rounded-lg bg-primary px-8 text-sm font-medium text-white sm:h-[43px]"
+              className="flex h-11 items-center justify-center self-start rounded-lg bg-primary px-8 text-sm font-medium text-white"
             >
               Save Changes
             </button>
@@ -237,7 +237,7 @@ export const TrainerCourseDetail = () => {
                     showToast('Reply posted.');
                     setComment('');
                   }}
-                  className="flex h-[38px] items-center justify-center self-end rounded-lg bg-primary px-8 text-sm font-medium text-white transition-opacity disabled:opacity-40 sm:h-[43px]"
+                  className="flex h-11 items-center justify-center self-end rounded-lg bg-primary px-8 text-sm font-medium text-white transition-opacity disabled:opacity-40"
                 >
                   Send
                 </button>
@@ -264,11 +264,11 @@ export const TrainerCourseDetail = () => {
                   ))}
                 </div>
                 <div className="flex items-center gap-3">
-                  <button type="button" onClick={() => showToast('Post published.')} className="flex h-[38px] items-center gap-2 rounded-lg bg-primary px-4 text-sm font-medium text-white sm:h-[43px]">
+                  <button type="button" onClick={() => showToast('Post published.')} className="flex h-11 items-center gap-2 rounded-lg bg-primary px-4 text-sm font-medium text-white">
                     <Add size={16} variant="Linear" color="currentColor" />
                     Make a post
                   </button>
-                  <button type="button" onClick={() => showToast('Announcement sent.')} className="flex h-[38px] items-center gap-2 rounded-lg bg-[#d54600] px-4 text-sm font-medium text-white sm:h-[43px]">
+                  <button type="button" onClick={() => showToast('Announcement sent.')} className="flex h-11 items-center gap-2 rounded-lg bg-[#d54600] px-4 text-sm font-medium text-white">
                     <Add size={16} variant="Linear" color="currentColor" />
                     Make Announcement
                   </button>

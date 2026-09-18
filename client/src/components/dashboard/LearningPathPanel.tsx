@@ -22,7 +22,7 @@ export const LearningPathPanel = () => {
         </div>
         <Link
           to="/get-started"
-          className="flex h-[38px] shrink-0 items-center justify-center rounded-lg bg-primary px-6 text-base font-medium text-white transition-colors hover:bg-primary-strong sm:h-[43px]"
+          className="flex h-11 shrink-0 items-center justify-center rounded-lg bg-primary px-6 text-base font-medium text-white transition-colors hover:bg-primary-strong"
         >
           Find my learning path
         </Link>

@@ -112,7 +112,7 @@ export const CourseLearn = () => {
                   type="button"
                   onClick={markComplete}
                   disabled={completed.has(activeLesson)}
-                  className="flex h-[38px] items-center justify-center self-start rounded-lg bg-primary-text px-6 text-base font-medium text-white transition-opacity disabled:opacity-40 sm:h-[43px]"
+                  className="flex h-11 items-center justify-center self-start rounded-lg bg-primary-text px-6 text-base font-medium text-white transition-opacity disabled:opacity-40"
                 >
                   {completed.has(activeLesson) ? 'Completed' : 'Mark as complete'}
                 </button>

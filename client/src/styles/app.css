@@ -161,6 +161,15 @@
   }
 }
 
+/* Every button-shaped control is 44px tall. The min-height guards the cases where a stacked
+   (flex-col) layout hands a button `flex-1`, which would otherwise shrink it to its text height
+   on phones — the "buttons shrinking on mobile" bug. */
+button.h-11,
+a.h-11,
+label.h-11 {
+  min-height: 44px;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);

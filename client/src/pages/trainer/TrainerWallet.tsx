@@ -32,12 +32,12 @@ export const TrainerWallet = () => {
               <button
                 type="button"
                 onClick={() => setWithdrawOpen(true)}
-                className="flex h-[38px] flex-1 items-center justify-center gap-2 rounded-lg bg-white/15 text-sm font-medium text-white sm:h-[43px]"
+                className="flex h-11 flex-1 items-center justify-center gap-2 rounded-lg bg-white/15 text-sm font-medium text-white"
               >
                 <WalletMinus size={16} variant="Linear" color="currentColor" />
                 Withdraw from wallet
               </button>
-              <button type="button" className="flex h-[38px] flex-1 items-center justify-center gap-2 rounded-lg bg-white text-sm font-medium text-primary-text sm:h-[43px]">
+              <button type="button" className="flex h-11 flex-1 items-center justify-center gap-2 rounded-lg bg-white text-sm font-medium text-primary-text">
                 <WalletAdd1 size={16} variant="Linear" color="currentColor" />
                 Fund Wallet
               </button>
@@ -50,7 +50,7 @@ export const TrainerWallet = () => {
                 <h2 className="text-lg leading-7 font-semibold text-ink">Transaction History</h2>
                 <p className="text-sm text-muted">Recent wallet activity</p>
               </div>
-              <button type="button" className="flex items-center gap-1.5 rounded-md border border-line-strong px-3 py-2 text-sm text-ink">
+              <button type="button" className="flex h-11 items-center gap-1.5 rounded-md border border-line-strong px-3 text-sm text-ink">
                 <Export size={16} variant="Linear" color="currentColor" />
                 Export
               </button>

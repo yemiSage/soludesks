@@ -24,14 +24,14 @@ export const LeaveReviewModal = ({ open, onClose, onSubmit }: Props) => {
       title="Leave a review"
       footer={
         <>
-          <button type="button" onClick={onClose} className="flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text sm:h-[43px]">
+          <button type="button" onClick={onClose} className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text">
             Cancel
           </button>
           <button
             type="button"
             onClick={submit}
             disabled={!rating}
-            className="flex h-[38px] w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white transition-opacity disabled:opacity-30 sm:h-[43px] sm:w-[212px]"
+            className="flex h-11 w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white transition-opacity disabled:opacity-30 sm:w-[212px]"
           >
             Rate
           </button>

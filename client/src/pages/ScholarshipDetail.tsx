@@ -116,7 +116,7 @@ export const ScholarshipDetail = () => {
               <div key={course.id} className="flex flex-col gap-3">
                 <CourseCard course={course} />
                 {application ? (
-                  <span className="flex h-[38px] items-center justify-center gap-1.5 rounded-lg bg-[#f0fdf4] text-sm font-medium text-[#008236] sm:h-[43px]">
+                  <span className="flex h-11 items-center justify-center gap-1.5 rounded-lg bg-[#f0fdf4] text-sm font-medium text-[#008236]">
                     <TickCircle size={18} variant="Bold" color="currentColor" />
                     Applied
                   </span>
@@ -124,7 +124,7 @@ export const ScholarshipDetail = () => {
                   <button
                     type="button"
                     onClick={() => setViewingCourse(course)}
-                    className="flex h-[38px] items-center justify-center rounded-lg border border-primary-text text-sm font-medium text-primary-text sm:h-[43px]"
+                    className="flex h-11 items-center justify-center rounded-lg border border-primary-text text-sm font-medium text-primary-text"
                   >
                     Enroll
                   </button>

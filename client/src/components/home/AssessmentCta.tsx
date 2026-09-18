@@ -31,7 +31,7 @@ export const AssessmentCta = () => (
 
           <Link
             to="/get-started"
-            className="flex h-13 w-fit items-center justify-center rounded-xl bg-white px-5 text-base font-medium text-primary-text"
+            className="flex h-11 w-fit items-center justify-center rounded-xl bg-white px-5 text-base font-medium text-primary-text"
           >
             Let's help you get started
           </Link>

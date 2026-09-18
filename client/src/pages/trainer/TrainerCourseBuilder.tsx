@@ -26,10 +26,10 @@ const DeleteLessonDialog = ({ open, onCancel, onConfirm }: { open: boolean; onCa
           </h2>
           <p className="text-sm text-muted">This action is irreversible; the lesson will be permanently deleted.</p>
           <div className="mt-2 flex w-full gap-3">
-            <button type="button" onClick={onConfirm} className="flex h-[38px] flex-1 items-center justify-center rounded-lg border border-[#ff5025] text-sm font-medium text-[#ff5025] sm:h-[43px]">
+            <button type="button" onClick={onConfirm} className="flex h-11 flex-1 items-center justify-center rounded-lg border border-[#ff5025] text-sm font-medium text-[#ff5025]">
               Yes, Delete
             </button>
-            <button type="button" onClick={onCancel} className="flex h-[38px] flex-1 items-center justify-center rounded-lg bg-primary text-sm font-medium text-white sm:h-[43px]">
+            <button type="button" onClick={onCancel} className="flex h-11 flex-1 items-center justify-center rounded-lg bg-primary text-sm font-medium text-white">
               No Cancel
             </button>
           </div>
@@ -127,7 +127,7 @@ export const TrainerCourseBuilder = () => {
                 {sections.length} sections • {lessonCount} lessons
               </p>
             </div>
-            <button type="button" onClick={addSection} className="flex h-[38px] items-center gap-2 rounded-lg border border-primary-text px-4 text-sm font-medium text-primary-text sm:h-[43px]">
+            <button type="button" onClick={addSection} className="flex h-11 items-center gap-2 rounded-lg border border-primary-text px-4 text-sm font-medium text-primary-text">
               <Add size={16} variant="Linear" color="currentColor" />
               Add Section
             </button>
@@ -184,7 +184,7 @@ export const TrainerCourseBuilder = () => {
             showToast('Your course is being published.');
             navigate('/trainer/courses');
           }}
-          className={cx('flex h-[38px] items-center justify-center self-end rounded-lg bg-primary px-8 text-sm font-medium text-white sm:h-[43px]')}
+          className={cx('flex h-11 items-center justify-center self-end rounded-lg bg-primary px-8 text-sm font-medium text-white')}
         >
           Save and Publish
         </button>

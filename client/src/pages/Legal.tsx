@@ -67,7 +67,7 @@ export const Legal = () => {
         </div>
         <a
           href="#footer"
-          className="flex h-12 w-[218px] items-center justify-center rounded-lg border border-primary-text text-base font-medium text-primary-text"
+          className="flex h-11 w-[218px] items-center justify-center rounded-lg border border-primary-text text-base font-medium text-primary-text"
         >
           Contact Us
         </a>

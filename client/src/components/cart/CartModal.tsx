@@ -50,7 +50,7 @@ export const CartModal = ({ open, onClose }: Props) => {
         <div className="flex h-full flex-col items-center justify-center gap-4 text-center">
           <p className="text-base font-medium text-ink">Your cart is empty</p>
           <p className="text-sm text-muted">Browse courses and add the ones you want to learn next.</p>
-          <Link to="/explore" onClick={onClose} className="rounded-lg border border-primary-text px-6 py-2.5 text-sm font-medium text-primary-text">
+          <Link to="/explore" onClick={onClose} className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-sm font-medium text-primary-text">
             Explore courses
           </Link>
         </div>
@@ -159,7 +159,7 @@ export const CartModal = ({ open, onClose }: Props) => {
                 <span className="text-sm font-medium text-muted">Total</span>
                 <span className="text-2xl leading-8 font-semibold text-ink">{formatPrice(total)}</span>
               </div>
-              <button type="button" onClick={pay} className="flex h-12 w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white">
+              <button type="button" onClick={pay} className="flex h-11 w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white">
                 {!isAuthenticated ? 'Proceed to Checkout' : needsFunding ? 'Fund Wallet' : 'Pay Now'}
               </button>
             </div>

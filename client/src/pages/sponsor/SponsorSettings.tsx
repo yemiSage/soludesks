@@ -75,7 +75,7 @@ export const SponsorSettings = () => {
             <button
               type="button"
               onClick={() => showToast('Profile changes saved.')}
-              className="flex h-[38px] items-center justify-center self-end rounded-lg bg-primary px-8 text-sm font-medium text-white sm:h-[43px]"
+              className="flex h-11 items-center justify-center self-end rounded-lg bg-primary px-8 text-sm font-medium text-white"
             >
               Save and Continue
             </button>

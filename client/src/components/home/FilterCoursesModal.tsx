@@ -19,7 +19,7 @@ export const FilterCoursesModal = ({ open, onClose, filters, onApply }: Props) =
 
   const pillClass = (active: boolean) =>
     cx(
-      'flex h-10 min-w-[90px] flex-1 items-center justify-center rounded-lg border px-3 text-sm sm:min-w-[130px] sm:flex-none',
+      'flex h-11 min-w-[90px] flex-1 items-center justify-center rounded-lg border px-3 text-sm sm:min-w-[130px] sm:flex-none',
       active ? 'border-primary-text bg-[#eaf3ff] text-primary-text font-medium' : 'border-line-strong text-muted',
     );
 
@@ -37,14 +37,14 @@ export const FilterCoursesModal = ({ open, onClose, filters, onApply }: Props) =
               setDraft(emptyCourseFilters);
               onApply(emptyCourseFilters);
             }}
-            className="flex h-12 w-full items-center justify-center rounded-lg border border-primary-text text-base text-primary-text sm:w-[187px]"
+            className="flex h-11 w-full items-center justify-center rounded-lg border border-primary-text text-base text-primary-text sm:w-[187px]"
           >
             Clear Filter
           </button>
           <button
             type="button"
             onClick={() => onApply(draft)}
-            className="flex h-12 w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white sm:w-[187px]"
+            className="flex h-11 w-full items-center justify-center rounded-lg bg-primary-text text-base font-medium text-white sm:w-[187px]"
           >
             Apply Filters
           </button>

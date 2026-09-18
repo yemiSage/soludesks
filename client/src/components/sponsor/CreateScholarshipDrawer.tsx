@@ -89,7 +89,7 @@ export const CreateScholarshipDrawer = ({ open, onClose }: { open: boolean; onCl
                 <span className="font-medium text-primary-text">Request a course</span>
               </button>
             ) : (
-              <button type="button" onClick={close} className="flex h-[38px] items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text sm:h-[43px]">
+              <button type="button" onClick={close} className="flex h-11 items-center justify-center rounded-lg border border-primary-text px-6 text-base text-primary-text">
                 Cancel
               </button>
             )}
@@ -97,7 +97,7 @@ export const CreateScholarshipDrawer = ({ open, onClose }: { open: boolean; onCl
               type="button"
               onClick={next}
               disabled={!canContinue}
-              className="flex h-[38px] w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-opacity disabled:opacity-40 sm:h-[43px]"
+              className="flex h-11 w-[212px] items-center justify-center rounded-lg bg-primary text-base font-medium text-white transition-opacity disabled:opacity-40"
             >
               {step === steps.length - 1 ? 'Launch' : 'Continue'}
             </button>
@@ -155,7 +155,7 @@ export const CreateScholarshipDrawer = ({ open, onClose }: { open: boolean; onCl
                       type="button"
                       onClick={() => setForm((previous) => ({ ...previous, funding: option }))}
                       className={cx(
-                        'h-10 flex-1 rounded-lg border text-sm transition-colors',
+                        'h-11 flex-1 rounded-lg border text-sm transition-colors',
                         form.funding === option
                           ? 'border-[var(--sematic-interactivecomponents-primaryic-2)] bg-[var(--sematic-backgrounds-primarybackground-2)] text-primary-text'
                           : 'border-line-strong text-muted',

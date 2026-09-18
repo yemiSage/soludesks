@@ -24,7 +24,7 @@ const SaveButton = ({ onClick }: { onClick: () => void }) => (
   <button
     type="button"
     onClick={onClick}
-    className="flex h-[38px] w-full items-center justify-center rounded-lg bg-primary text-base font-medium text-white sm:h-[43px] sm:w-[343px]"
+    className="flex h-11 w-full items-center justify-center rounded-lg bg-primary text-base font-medium text-white sm:w-[343px]"
   >
     Save Changes
   </button>

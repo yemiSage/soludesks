@@ -43,7 +43,7 @@ export const ApplicationSuccessModal = ({ scholarshipTitle, onClose }: Props) =>
             onClose();
             navigate('/scholarships');
           }}
-          className="flex h-[38px] items-center justify-center rounded-lg bg-primary-text px-3 text-base font-semibold text-white sm:h-[43px]"
+          className="flex h-11 items-center justify-center rounded-lg bg-primary-text px-3 text-base font-semibold text-white"
         >
           Go to scholarships
         </button>

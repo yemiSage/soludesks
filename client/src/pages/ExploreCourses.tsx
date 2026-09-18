@@ -62,7 +62,7 @@ export const ExploreCourses = () => {
             <button
               type="button"
               onClick={() => setFilterModalOpen(true)}
-              className="flex h-10 shrink-0 items-center gap-2.5 rounded-lg border border-line-strong px-5 text-sm text-ink"
+              className="flex h-11 shrink-0 items-center gap-2.5 rounded-lg border border-line-strong px-5 text-sm text-ink"
             >
               All Filters{activeFilterCount ? ` (${activeFilterCount})` : ''}
               <Sort size={20} variant="Linear" color="currentColor" />
